@@ -1,0 +1,31 @@
+Apr 30, 2022 5:40:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-auto-1"]
+Apr 30, 2022 5:40:29 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Tomcat
+Apr 30, 2022 5:40:29 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Apr 30, 2022 5:40:37 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+log4j:WARN No appenders could be found for logger (com.sas.ep.sascoder.config.PlatformInitializer).
+log4j:WARN Please initialize the log4j system properly.
+Apr 30, 2022 5:40:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [com.sas.ep.sascoder.config.PlatformInitializer@3507b24b]
+Apr 30, 2022 5:40:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Apr 30, 2022 5:40:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Config path: file:/C:/Program%20Files/SASHome/SASStudioSingleUser/3.6/./
+Apr 30, 2022 5:40:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Context path: SASStudio
+Apr 30, 2022 5:40:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Configuring Log4j from URL at path: /file:/C:/Program%20Files/SASHome/SASStudioSingleUser/3.6/./SASStudio-log4j.xml
+Apr 30, 2022 5:40:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: isXMLConfigFile: true
+Apr 30, 2022 5:40:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'coderServlet'
+Apr 30, 2022 5:40:47 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-auto-1-51857"]
+Server running at: http://localhost:51857/
+Apr 30, 2022 5:40:50 PM java.util.prefs.WindowsPreferences <init>
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+Apr 30, 2022 5:40:56 PM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
