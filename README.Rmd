@@ -1,0 +1,49 @@
+---
+title: "README"
+author: "Mohsen Soltanifar"
+date: "03/08/2022"
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# descfars
+
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.com/MohsenSoltanifar/descfarspkg.svg?branch=master)](https://travis-ci.com/MohsenSoltanifar/descfarspkg)
+<!-- badges: end -->
+
+The goal of descfarspkg is to  present a set  of functions that presents descriptive statistics and plots for FARS 2013-2015 data.
+
+
+## Installation
+
+You can install the development version of descfarspkg with:
+
+``` {r, warning=FALSE, eval=F,   message=FALSE}
+# install.packages("devtools")
+devtools::install_github("MohsenSoltanifar/descfarspkg")
+```
+
+## Example:  Total monthly accidents
+
+This function gets the year in the dataset and returns a tibble datamatrix of two columns showing the counts of fatalities by month: year: 2015.
+
+```{r, warning=FALSE, eval=F,   message=FALSE}
+library(descfarspkg)
+years <- c(2015)
+fars_summarize_years(years)
+```
+
+
+
+

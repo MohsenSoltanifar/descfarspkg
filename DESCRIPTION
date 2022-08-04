@@ -1,14 +1,29 @@
 Package: descfarspkg
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Mohsen Soltanifar
-Maintainer: The package maintainer <mohsen.soltanifar@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: GPL-3
+Version: 0.1-0
+Date: 2022-08-03
+Depends: R (>= 4.1.0)
+Imports: 
+    dplyr,
+    graphics,
+    magrittr,
+    maps,
+    readr,
+    rlang,
+    tibble,
+    tidyr
+Title: descriptive R package for fars data
+Author: Mohsen Soltanifar <mohsen.soltanifar@gmail.com>
+Maintainer: Mohsen Soltanifar <mohsen.soltanifar@gmail.com>
+Description: A set  of functions that presents descriptive statistics and plots for FARS 2013-2015 data.
+License: GPL (>= 3)
+URL: https://github.com/MohsenSoltanifar/descfarspkg
 Encoding: UTF-8
 LazyData: true
+Suggests: 
+    rmarkdown,
+    knitr,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
 RoxygenNote: 7.2.0
-URL: https://github.com/MohsenSoltanifar/descfarspkg
+Config/testthat/edition: 3
 BugReports: https://github.com/MohsenSoltanifar/descfarspkg/issues

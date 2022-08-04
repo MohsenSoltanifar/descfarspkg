@@ -1,0 +1,86 @@
+---
+title: "descfarspkg_vignette"
+author: "[Mohsen Soltanifar](https://github.com/MohsenSoltanifar/)"
+date: "August 03, 2022"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{descfarspkg_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r , warning=FALSE, eval=F}
+library(descfarspkg)
+```
+#(1) Package Description
+
+The `descfarspkg` package presents descriptive statistics from Fatality Analysis Reporting System (FARS) data in 2012-2015 from the [National Highway Traffic Safety Administration](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
+
+ 
+
+
+##(2) Load Packages
+
+```{r, warning=FALSE, eval=F}
+library(descfarspkg)
+```
+
+
+##(3)Included data
+
+Data files included within the package are:
+
+```{r, warning=FALSE, eval=F}
+list.files(system.file("extdata", package = "descfarspkg"))
+```
+
+##(4) Package "descfarspkg" Functions
+
+###(4-1) Function `make_filename`
+
+This function produces file name and path to the data files from the farsdata:
+
+```{r, warning=FALSE, eval=F}
+year <- 2015
+make_filename(year)
+```
+
+###(4-2) Function `fars_read_years`
+
+This function reads the data per given year and is used by `fars_summarize_years`
+
+```{r, warning=FALSE, eval=F}
+fars_read_years(2015)
+```
+
+
+###(4-3) Function `fars_summarize_years`
+
+This function produces a descriptive statistics including annual frequency of accidents, by month.
+
+```{r, warning=FALSE, eval=F}
+fars_summarize_years(2015) 
+```
+
+###(4-4) Function `fars_map_state`
+
+The function produces a given state map plot including its occurred accidents locations in a given year in the period 2013-2015.
+
+```{r, warning=FALSE, eval=F}
+state_num <- 10 # Delaware
+year <- 2015
+fars_map_state(state_num, year)
+```
+
+
+
+
+# Links:
+* [Package descfarspkg GitHub](https://github.com/MohsenSoltanifar/descfarspkg)
