@@ -1,7 +1,7 @@
 Package: descfarspkg
 Version: 0.1-0
 Date: 2022-08-03
-Depends: R (>= 4.1.0)
+Depends: R (>= 4.0.2)
 Imports: 
     dplyr,
     graphics,
