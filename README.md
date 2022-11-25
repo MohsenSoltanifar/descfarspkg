@@ -1,5 +1,4 @@
-[![Build Status](https://app.travis-ci.com/MohsenSoltanifar/descfarspkg.svg?branch=master)](https://app.travis-ci.com/MohsenSoltanifar/descfarspkg)
-
+[![myR-CMD-check](https://github.com/MohsenSoltanifar/descfarspkg/actions/workflows/myRCMD.yml/badge.svg)](https://github.com/MohsenSoltanifar/descfarspkg/actions/workflows/myRCMD.yml)
 
 README
 ================
